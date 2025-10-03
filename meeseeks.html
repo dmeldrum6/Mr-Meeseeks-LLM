@@ -440,8 +440,7 @@
                             { role: 'system', content: getMeeseeksSystemPrompt(contextUsage) },
                             ...messages
                         ],
-                        temperature: contextUsage < 60 ? 0.9 : contextUsage < 85 ? 1.1 : 1.3,
-                        max_tokens: 500
+                        temperature: contextUsage < 60 ? 0.9 : contextUsage < 85 ? 1.1 : 1.3
                     })
                 });
 
